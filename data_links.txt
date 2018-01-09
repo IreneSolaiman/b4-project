@@ -26,3 +26,18 @@ http://www.telegraph.co.uk/technology/2016/06/10/mapped-the-countries-most-vulne
 
 2014 Global Mapping
 http://www.casos.cs.cmu.edu/publications/papers/CMU-ISR-14-111.pdf
+
+Wee Keong - Internet Penetration Rates
+
+1) http://www.internetworldstats.com/stats.htm
+2) https://data.worldbank.org/indicator/IT.NET.USER.ZS
+
+If we need GDP as a variable for any of our datasets:
+https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?view=chart
+
+Vectors/Sources of Cyber Attacks
+http://veriscommunity.net/
+https://github.com/vz-risk/VCDB
+
+Some data visualizations that had been generated from the above data source:
+https://cambridge-intelligence.com/visualizing-cyber-security-graphs-data-breaches/
