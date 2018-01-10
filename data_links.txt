@@ -45,13 +45,37 @@ https://cambridge-intelligence.com/visualizing-cyber-security-graphs-data-breach
 STEPHANE
 
 a) Cybersecurity index per country 2015-2017
+https://knoema.com/GCSI2015/global-cybersecurity-index
 
-b) Internet penetration per country / year
+b) Internet penetration per country / year. Measured in:
+# in int'l internet bandwidth (kb/s/user)
+# in households with internet access in % for individual usage
+# in fixed broadband internet subscriptions per 100 pop for individual usage 
+# in an index for B2C and B2B internet use for corporate usage
+LINK https://knoema.com/GITR2015/global-information-technology-report-2016
+ALTERNATIVE DATASET: https://knoema.com/STIO_2016/oecd-science-technology-and-industry-outlook-2016
+ 
 
-c) Internet secure servers (absolute number and proportion relative to population) per country per year
+c) Internet secure servers (absolute number and proportion relative to population) per country per year:
+# secure internet servers/million pop. 
+LINK https://knoema.com/GITR2015/global-information-technology-report-2016
+ALTERNATIVE DATASET: https://knoema.com/STIO_2016/oecd-science-technology-and-industry-outlook-2016
 
-d) 250 biggest data breaches in history (since ~2000) with name of company, vector, type of data hacked.
+d) 250 biggest data breaches in history (since ~2000)
+# name of organization breached ("entity")
+# sector e.g. healthcare, military ("organisation")
+# method of leak e.g. accidentally published, leak, hacked.
+# data sensitivity e.g. credit card information, SSN/personal details
+# measure: number of records stolen 
+LINK https://knoema.com/lrbhxce/world-s-biggest-data-breaches
 
 e) Military expenditure by country by year
+# military expenditure in  calendar or local financial years, local currency
+# military epxenditure in constant 2011, 2014 and 2015 USD
+# military expenditure in % of GDP
+# military expenditure in current USD
+# military expenditure per capita
+LINK https://knoema.com/SIPRI2017/sipri-military-expenditure-database-1988-2016
 
-f) e-government development index by country. Includes coutry's telecommunication infrastructure index and internet participation.
+f) e-government development index by country. 
+LINK: https://knoema.com/STIO_2016/oecd-science-technology-and-industry-outlook-2016
