@@ -1,6 +1,6 @@
 Links
 
-Irene: Cyber attacks & Data Breaches
+IRENE: Cyber attacks & Data Breaches
 Data breach v cyber attack?
 http://breachlevelindex.com/
 
@@ -27,7 +27,7 @@ http://www.telegraph.co.uk/technology/2016/06/10/mapped-the-countries-most-vulne
 2014 Global Mapping
 http://www.casos.cs.cmu.edu/publications/papers/CMU-ISR-14-111.pdf
 
-Wee Keong - Internet Penetration Rates
+WEE KEONG - Internet Penetration Rates
 
 1) http://www.internetworldstats.com/stats.htm
 2) https://data.worldbank.org/indicator/IT.NET.USER.ZS
@@ -41,3 +41,17 @@ https://github.com/vz-risk/VCDB
 
 Some data visualizations that had been generated from the above data source:
 https://cambridge-intelligence.com/visualizing-cyber-security-graphs-data-breaches/
+
+STEPHANE
+
+a) Cybersecurity index per country 2015-2017
+
+b) Internet penetration per country / year
+
+c) Internet secure servers (absolute number and proportion relative to population) per country per year
+
+d) 250 biggest data breaches in history (since ~2000) with name of company, vector, type of data hacked.
+
+e) Military expenditure by country by year
+
+f) e-government development index by country. Includes coutry's telecommunication infrastructure index and internet participation.
