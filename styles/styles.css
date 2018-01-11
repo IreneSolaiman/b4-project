@@ -41,3 +41,16 @@ h1 {
 .topnav a.active {
    border-bottom: 3px solid red;
 }
+
+html {
+  background-color: #000000;
+}
+
+html {
+  font-size: 14px; /* px means 'pixels': the base font size is now 10 pixels high  */
+  font-family: courier
+}
+
+p,h1,h2,li{
+  color: white;
+}
