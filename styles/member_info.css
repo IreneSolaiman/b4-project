@@ -1,5 +1,5 @@
 .accordion {
-    background-color: #eee;
+    background-color: black;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -7,7 +7,8 @@
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 15px; 
+    font-family: courier;
     transition: 0.4s;
 }
 
@@ -29,7 +30,7 @@
 
 .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: grey;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
