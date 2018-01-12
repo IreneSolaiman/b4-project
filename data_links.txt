@@ -79,3 +79,6 @@ LINK https://knoema.com/SIPRI2017/sipri-military-expenditure-database-1988-2016
 
 f) e-government development index by country. 
 LINK: https://knoema.com/STIO_2016/oecd-science-technology-and-industry-outlook-2016
+
+g) bitcoin trading volume per currency per year
+https://data.bitcoinity.org/markets/volume/all?c=c&t=b
