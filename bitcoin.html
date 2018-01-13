@@ -3,14 +3,14 @@
 <head>
 	<link href="styles/styles.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="Eyecon.png">
-	<title>Digital Currency: Bitcoin</title>
+	<title>Cybersecurity index evolution by country</title>
 </head>
 
 
 <body>
 
 
-<h1>Digital Currency: Bitcoin</h1>
+<h1>Cybersecurity index: Evolution by country</h1>
 <!--this section creates the html for the top horizontal navigation bar-->
 
 	<div class="topnav">
@@ -22,10 +22,43 @@
 	 <a href="bitcoin.html" class="active">Bitcoin</a>
 	</div>
 	
+Order:
+<select id="order">
+  <option value="null" selected> ----- </option>
+  <option value="sortinit_col_row">Initial order on columns and rows</option>
+  <option value="sortinit_row">Initial order on rows</option>
+  <option value="sortinit_col">Initial order on columns</option>
+</select>
+
+Palette:
+<select id="palette">
+  <option value="RdYlGn">RdYlGn</option>
+  <option value="Spectral" selected>Spectral</option>
+  <option value="RdYlBu">RdYlBu</option>
+  <option value="RdGy">RdGy</option>
+  <option value="RdBu">RdBu</option>
+  <option value="PiYG">PiYG</option>
+  <option value="PRGn">PRGn</option>
+  <option value="BrBG">BrBG</option>
+  <option value="PuOr">PuOr</option>
+</select>
+
+<div id="heatmap"></div>
 
 
-<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-	
+<script src="http://d3js.org/d3.v3.js"></script>
+<script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script src="heatmap.js"></script>
+<link rel="stylesheet" href="heatmap.css" />
+
+<script>
+$(document).ready(function() {
+	heatmap_display("raw_data/metrics_ocmip5.json", "#heatmap", "Spectral");
+});
+</script>
+
 
 </body>
 </html>
