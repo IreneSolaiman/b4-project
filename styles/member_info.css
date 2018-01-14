@@ -13,12 +13,12 @@
 }
 
 .active, .accordion:hover {
-    background-color: #F1F1F1;
+    background-color: #E0E0E0;
 }
 
 .accordion:after {
     content: '\002B';
-    color: #F1F1F1;
+    color: black;
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -30,7 +30,7 @@
 
 .panel {
     padding: 0 18px;
-    background-color: grey;
+    background-color: #F0F0F0;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
