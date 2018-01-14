@@ -37,7 +37,7 @@ d3.csv("charts/internet.csv", function(error, data) {
 
   x.domain(d3.extent(data, function(d) { return d.x; })).nice();
   y.domain(d3.extent(data, function(d) { return d.y; })).nice();
-
+  
   svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
@@ -92,3 +92,4 @@ d3.csv("charts/internet.csv", function(error, data) {
 
 });  
 })
+
