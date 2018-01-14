@@ -27,19 +27,19 @@ function heatmap_display(url, heatmapId, paletteName) {
     //==================================================
     // http://bl.ocks.org/mbostock/3680958
     function zoom() {
-    	svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+        svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
     }
 
     // define the zoomListener which calls the zoom function on the "zoom" event constrained within the scaleExtents
-    var zoomListener = d3.behavior.zoom().scaleExtent([0.1, 3]).on("zoom", zoom);
-
+    var zoomListener = d3.behavior.zoom().scaleExtent([0, 0]).on("zoom", null);
+    
     //==================================================
-    var viewerWidth = $(document).width();
+    var viewerWidth = 600;
     var viewerHeight = $(document).height();
-    var viewerPosTop = 200;
+    var viewerPosTop = 150;
     var viewerPosLeft = 100;
 
-    var legendElementWidth = cellSize * 2;
+    var legendElementWidth = cellSize * 1.5;
 
     // http://bl.ocks.org/mbostock/5577023
     var colors = colorbrewer[paletteName][classesNumber];
@@ -63,7 +63,7 @@ function heatmap_display(url, heatmapId, paletteName) {
         svg = d3.select(heatmapId).append("svg")
             .attr("width", viewerWidth)
             .attr("height", viewerHeight)
-	    .call(zoomListener)
+        .call(zoomListener)
             .append("g")
             .attr("transform", "translate(" + viewerPosLeft + "," + viewerPosTop + ")");
 
@@ -107,13 +107,13 @@ function heatmap_display(url, heatmapId, paletteName) {
             .on('mouseout', function(d, i) {
                 d3.select('#rowLabel_' + i).classed("hover", false);
             })
-            .on("click", function(d, i) {
+       /*     .on("click", function(d, i) {
                 rowSortOrder = !rowSortOrder;
                 sortByValues("r", i, rowSortOrder);
                 d3.select("#order").property("selectedIndex", 0);
                 //$("#order").jqxComboBox({selectedIndex: 0});
             });
-
+        */
         var colLabels = svg.append("g")
             .attr("class", "colLabels")
             .selectAll(".colLabel")
@@ -141,12 +141,12 @@ function heatmap_display(url, heatmapId, paletteName) {
             .on('mouseout', function(d, i) {
                 d3.select('#colLabel_' + i).classed("hover", false);
             })
-            .on("click", function(d, i) {
+        /*    .on("click", function(d, i) {
                 colSortOrder = !colSortOrder;
                 sortByValues("c", i, colSortOrder);
                 d3.select("#order").property("selectedIndex", 0);
             });
-
+        */
         var row = svg.selectAll(".row")
             .data(data.data)
             .enter().append("g")
@@ -205,10 +205,10 @@ function heatmap_display(url, heatmapId, paletteName) {
             .on('click', function() {
                 //console.log(d3.select(this));
             });
-
+        
         var legend = svg.append("g")
             .attr("class", "legend")
-            .attr("transform", "translate(0,-300)")
+            .attr("transform", "translate(140,-275)")
             .selectAll(".legendElement")
             .data([0, 10, 20, 30, 40, 50, 60, 70, 80, 90])
             .enter().append("g")
@@ -238,7 +238,7 @@ function heatmap_display(url, heatmapId, paletteName) {
 
         //==================================================
         // Change ordering of cells
-        function sortByValues(rORc, i, sortOrder) {
+        /*function sortByValues(rORc, i, sortOrder) {
             var t = svg.transition().duration(1000);
             var values = [];
             var sorted;
@@ -247,7 +247,7 @@ function heatmap_display(url, heatmapId, paletteName) {
                     if (d != null) values.push(d);
                     else values.push(-999); // to handle NaN
                 });
-            //console.log(values);		
+            //console.log(values);      
             if (rORc == "r") { // sort on cols
                 sorted = d3.range(col_number).sort(function(a, b) {
                     if (sortOrder) {
@@ -293,26 +293,26 @@ function heatmap_display(url, heatmapId, paletteName) {
 
         //==================================================
         d3.select("#order").on("change", function() {
-	    var newOrder = d3.select("#order").property("value");	
+        var newOrder = d3.select("#order").property("value");   
             changeOrder(newOrder, heatmapId);
         });
-
+        */
         //==================================================
         d3.select("#palette")
             .on("keyup", function() {
-		var newPalette = d3.select("#palette").property("value");
-		if (newPalette != null)						// when interfaced with jQwidget, the ComboBox handles keyup event but value is then not available ?
-                	changePalette(newPalette, heatmapId);
+        var newPalette = d3.select("#palette").property("value");
+        if (newPalette != null)                     // when interfaced with jQwidget, the ComboBox handles keyup event but value is then not available ?
+                    changePalette(newPalette, heatmapId);
             })
             .on("change", function() {
-		var newPalette = d3.select("#palette").property("value");
+        var newPalette = d3.select("#palette").property("value");
                 changePalette(newPalette, heatmapId);
             });
     });
 
     //==================================================
 }
-
+/*
 //#########################################################
 function changeOrder(newOrder, heatmapId) {
     var svg = d3.select(heatmapId);
@@ -369,12 +369,12 @@ function changeOrder(newOrder, heatmapId) {
             });
     }
 }
-
+*/
 //#########################################################
 function changePalette(paletteName, heatmapId) {
     var colors = colorbrewer[paletteName][classesNumber];
     var colorScale = d3.scale.quantize()
-        .domain([0.0, 1.0])
+        .domain([0, 100])
         .range(colors);
     var svg = d3.select(heatmapId);
     var t = svg.transition().duration(500);
@@ -387,4 +387,12 @@ function changePalette(paletteName, heatmapId) {
         .style("fill", function(d, i) {
             return colors[i];
         });
+
+svg.append("text")
+    .attr("x", (width / 2))
+    .attr("y", 0 - (margin.top / 2))
+    .attr("text-anchor", "middle")
+    .style("font-size", "16px")
+    .text("Title of graph")
+
 }
