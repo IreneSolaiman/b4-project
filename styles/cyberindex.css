@@ -1,14 +1,15 @@
-body {
-  font: 12px Courier;
+#chart body {
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
 }
 
-.axis path,
-.axis line {
+#chart .axis path,
+#chart .axis line {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
 
-.dot {
+#chart .dot {
   stroke: #000;
 }
