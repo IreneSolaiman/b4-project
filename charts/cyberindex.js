@@ -1,4 +1,4 @@
-d3.csv('charts/internet.csv', function (data) {
+d3.csv('charts/cyberindex.csv', function (data) {
   // Variables
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
     width = 960 - margin.left - margin.right,
@@ -27,7 +27,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("charts/internet.csv", function(error, data) {
+d3.csv("charts/cyberindex.csv", function(error, data) {
   if (error) throw error;
 
   data.forEach(function(d) {
