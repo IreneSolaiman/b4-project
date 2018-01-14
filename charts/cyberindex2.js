@@ -72,7 +72,7 @@ x.domain([0, d3.max(data, function (d) {
       .attr("r", 3.5)
       .attr("cx", function(d) { return x(d.x); })
       .attr("cy", function(d) { return y(d.y); })
-      .style("fill", function(d) { return color(d.z); });
+      .style("fill", "#ff9900");
 
 
 });  
