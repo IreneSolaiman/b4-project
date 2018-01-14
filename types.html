@@ -13,12 +13,13 @@
 <h1>Types of Cyber Attacks</h1>
 <!--this section creates the html for the top horizontal navigation bar-->
 
-	<div class="topnav">
+	<div class="topnav" id="myTopnav">
 	 <a href="index.html">Home</a>
+	 <a href="types.html" class="on">Types of Cyber Attacks</a>
 	 <a href="breaches.html">Data breaches</a>
 	 <a href="internetpenetration.html">Internet penetration</a>
-	 <a href="types.html" class="active">Types of Cyber Attacks</a>
 	 <a href="cyberindex.html">Cyber Security Index</a>
+	 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
 	
 <h2>Cyber Attacks Breakdown</h2>
@@ -39,6 +40,6 @@ Breach: An incident that results in the confirmed disclosure, not just potential
 <script src='https://d3js.org/d3.v4.min.js'></script>
 <script type='text/javascript' src='charts/sunburst.js'></script>
 	
-
+<script src="topnav.js"></script>
 </body>
 </html>

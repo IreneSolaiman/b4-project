@@ -3,23 +3,26 @@
 <head>
 	<link href="styles/styles.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="Eyecon.png">
-	<title>Cyber Security Index</title>
+
+	<title>Cybersecurity Index</title>
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="styles/cyberindex.css">
 </head>
 
 
 <body>
-<h1>Cyber Security Index vs Internet Penetration (2015)</h1>
+<h1>Cybersecurity</h1>
 
 <!--this section creates the html for the top horizontal navigation bar-->
 
-	<div class="topnav">
+	<div class="topnav" id="myTopnav">
 	 <a href="index.html" >Home</a>
+	 <a href="types.html">Types of Cyber Attacks</a>
 	 <a href="breaches.html">Data breaches</a>
 	 <a href="internetpenetration.html" >Internet penetration</a>
-	 <a href="types.html">Types of Cyber Attacks</a>
-	 <a href="cyberindex.html" class="active">Cyber Security Index</a>
+	 <a href="cyberindex.html" class="on">Cybersecurity Index</a>
+	 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
 	
 <div id="chart"></div>
@@ -27,17 +30,19 @@
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="charts/cyberindex.js"></script>	
 
-</body>
+
 
 <br>
 <br>
 <br>
 <br>
 
-<body>
-	
+
+
+
+
 <p>Europe and Central Asia</p>
 <script src="charts/cyberindex2.js"></script>	
-
+<script src="topnav.js"></script>
 </body>
 </html>
