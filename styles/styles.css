@@ -1,19 +1,23 @@
-[]
+
+
+
 /* Add a black background color to the top navigation */
 .topnav {
-   background-color: #333;
    overflow: hidden;
+   background-color: #333;
+
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
    float: left;
    display: block;
-   color: black;
+   color: #f2f2f2;
    text-align: center;
    padding: 14px 16px;
    text-decoration: none;
    font-size: 17px;
+   color: white;
    border-bottom: 3px solid transparent;
 }
 
@@ -23,6 +27,13 @@
 
 .topnav a.active {
    border-bottom: 3px solid red;
+}
+
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+    padding: 16px;
+    height: 1500px; /* Used in this example to enable scrolling */
+}
 }
 
 html {
