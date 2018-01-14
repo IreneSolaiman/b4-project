@@ -1,10 +1,23 @@
 
-circle,
-path {
-  cursor: pointer;
-}
+        #sunburst {
+            font-family: sans-serif;
+        }
 
-circle {
-  fill: none;
-  pointer-events: all;
-}
+        #sunburst .slice {
+            cursor: pointer;
+        }
+
+        #sunburst .slice .main-arc {
+            stroke: #fff;
+            stroke-width: 1px;
+        }
+
+        #sunburst .slice .hidden-arc {
+            fill: none;
+        }
+
+        #sunburst .slice text {
+            pointer-events: none;
+            dominant-baseline: middle;
+            text-anchor: middle;
+        }
