@@ -3,13 +3,14 @@
 <head>
 	<link href="styles/styles.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="Eyecon.png">
-	<title>Military</title>
+	<title>Types of Cyber Attacks</title>
+	<link rel="stylesheet" href="styles/sunburst.css">
 </head>
 
 
 <body>
 
-<h1>Military</h1>
+<h1>Types of Cyber Attacks</h1>
 <!--this section creates the html for the top horizontal navigation bar-->
 
 	<div class="topnav">
@@ -21,11 +22,23 @@
 	 <a href="bitcoin.html">Bitcoin</a>
 	</div>
 	
+<h2>Cyber Attacks Breakdown</h2>
+<h3>Breaches and Incidents in 2017</h3>
+<div id="sunburst"></div>
+
+<p>Click on each section to zoom in. Click on center to zoom out. Hover over each section to view title and count. </p>
+
+<p>
+	<i><b>Definitions</i></b>:
+	<br>
+Incident: A security event that compromises the integrity, confidentiality or availability of an information asset. 
+<br>
+Breach: An incident that results in the confirmed disclosure, not just potential exposure, of data to an unauthorized party. </p>
 
 
-<script src="//d3js.org/d3.v3.min.js"></script>
+<p>Data sourced from <a href="http://www.verizonenterprise.com/verizon-insights-lab/dbir/2017/">Verizon Enterprise's 2017 Data Breach Investigations Report</a>. Visualization sourced from <a href="https://bl.ocks.org/vasturiano/12da9071095fbd4df434e60d52d2d58d">here</a></p>
+<script src='https://d3js.org/d3.v4.min.js'></script>
 <script type='text/javascript' src='charts/sunburst.js'></script>
-
 	
 
 </body>
