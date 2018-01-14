@@ -6,6 +6,7 @@
 <link rel="icon" href="Eyecon.png">
 <link rel='stylesheet' type='text/css' href='charts/sunburst.css'>
 	<meta charset="utf-8">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cyber Attacks</title>
 	<link href="styles/styles.css" rel="stylesheet" type="text/css">
@@ -17,20 +18,25 @@
 <h1>Cyber Attacks</h1>
 <!--this section creates the html for the top horizontal navigation bar-->
 
-	<div class="topnav">
-	 <a href="index.html" class="active">Home</a>
+	<div class="topnav" id="myTopnav">
+	 <a href="index.html" class="on">Home</a>
+	 <a href="types.html">Types of Cyber Attacks</a>
 	 <a href="breaches.html">Data breaches</a>
 	 <a href="internetpenetration.html">Internet penetration</a>
-	 <a href="types.html">Types of Cyber Attacks</a>
 	 <a href="cyberindex.html">Cyber Security Index</a>
+	 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
 
 
+<div id="main">
 <h2>A DPI691M B Project</h2>
 <h3>Group Members</h3>
+</div>
 <button class="accordion">Irene Solaiman</button>
 <div class="panel">
-  <p>This is about Irene</p>
+  <p>Irene is a first-year Master in Public Policy Candidate at the Harvard Kennedy School. </p>
+  <p>She compeleted her self-constructed B.A. in International Relations at the University of Maryland, College Park in May 2017 and is interested in rising technological advances' effects on security policy and human rights.</p>
+  <p>Email: <a href="mailto:Irene_Solaiman@student.hks.harvard.edu">Irene_Solaiman@student.hks.harvard.edu</a> </p>
 </div>
 
 
@@ -57,7 +63,7 @@ This website analyses some of the existing data in the cyberspace arena and take
 </ul>
 
 
-
+<script src="topnav.js"></script>
 <script type='text/javascript' src='member_info.js'></script>
 
 </body>

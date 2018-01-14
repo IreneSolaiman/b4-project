@@ -12,12 +12,13 @@
 <h1>Data Breaches</h1>
 <!--this section creates the html for the top horizontal navigation bar-->
 
-	<div class="topnav">
+	<div class="topnav" id="myTopnav">
 	 <a href="index.html">Home</a>
-	 <a href="breaches.html" class="active">Data breaches</a>
-	 <a href="internetpenetration.html">Internet penetration</a>
 	 <a href="types.html">Types of Cyber Attacks</a>
+	 <a href="breaches.html" class="on">Data breaches</a>
+	 <a href="internetpenetration.html">Internet penetration</a>
 	 <a href="cyberindex.html">Cyber Security Index</a>
+	 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
 
 <h2>Breaches by Sector</h2>	
@@ -30,6 +31,6 @@
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="charts/donut.js"></script>
 <script src="charts/sectordonut.js"></script>
-
+<script src="topnav.js"></script>
 </body>
 </html>

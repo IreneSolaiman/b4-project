@@ -14,12 +14,13 @@
 
 <!--this section creates the html for the top horizontal navigation bar-->
 
-	<div class="topnav">
+	<div class="topnav" id="myTopnav">
 	 <a href="index.html" >Home</a>
-	 <a href="breaches.html">Data breaches</a>
-	 <a href="internetpenetration.html" class="active">Internet penetration</a>
 	 <a href="types.html">Types of Cyber Attacks</a>
+	 <a href="breaches.html">Data breaches</a>
+	 <a href="internetpenetration.html" class="on">Internet penetration</a>
 	 <a href="cyberindex.html">Cyber Security Index</a>
+	 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
 	
 
@@ -27,6 +28,6 @@
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="charts/internet.js"></script>
 
-
+<script src="topnav.js"></script>
 </body>
 </html>

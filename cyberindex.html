@@ -3,7 +3,9 @@
 <head>
 	<link href="styles/styles.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="Eyecon.png">
-	<title>Cyber Security Index</title>
+
+	<title>Cybersecurity Index</title>
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="styles/cyberindex.css">
 </head>
@@ -11,14 +13,16 @@
 
 <body>
 	
+
 <!--this section creates the html for the top horizontal navigation bar-->
 
-	<div class="topnav">
+	<div class="topnav" id="myTopnav">
 	 <a href="index.html" >Home</a>
+	 <a href="types.html">Types of Cyber Attacks</a>
 	 <a href="breaches.html">Data breaches</a>
 	 <a href="internetpenetration.html" >Internet penetration</a>
-	 <a href="types.html">Types of Cyber Attacks</a>
-	 <a href="cyberindex.html" class="active">Cyber Security Index</a>
+	 <a href="cyberindex.html" class="on">Cybersecurity Index</a>
+	 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
 	
 <div id="chart"></div>
@@ -41,6 +45,7 @@
 				<script src="charts/cyberindex2.js"></script></div>	
 
 				<div><p>Worryingly, 8 countries in Europe and Central Asia have an internet penetration rate of more than 70% but score lower than 0.3 in the Cybersecurity Index. These countries are Andorra, Cyprus, Iceland, Ireland, Kazahkstan, Liechtenstein, Macedonia and Slovenia.</p></div>
+
 
 
 </body>
