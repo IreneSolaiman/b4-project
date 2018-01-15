@@ -28,27 +28,44 @@
 	
 <div id="chart"></div>
 
-<div/>
+<div>
 
 	<h1>Cybersecurity Index vs Internet Penetration (2015)</h1>
 	<h2>How many countries are well-prepared for the cybersecurity risks that we face today?</h2>
 
-		<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-		<script src="charts/cyberindex.js"></script></div>	
+	<div id="world"></div>	
+
 
 			<div><p>The chart above shows the correlation between the Cybersecurity Index and the Internet Penetration Rate (as a percentage of overall population) for 185 countries, as of 2015. (The Cybersecurity Index, on a scale of 0 to 1, was developed by the International Telecommunications Union, a specialized agency under the United Nations. The Internet Penetration Rate was compiled by the World Bank.)</p>
 
-			<p>It is no surprise that a large number of countries fall into the bottom left corner of the chart, i.e. countries with low internet penetration rates generally do not have low cybersecurity indices, since the issue of cybersecurity would be of lower priority to these countries. By the same token, we would expect a large number of countries to fall into the top right corner of the chart, i.e. countries with higher internet penetration rates score higher on the cybersecurity index.</p>
+			<p>It is no surprise that a large number of countries fall into the bottom left quadrant of the chart, i.e. countries with low internet penetration rates generally do not have low cybersecurity indices, since the issue of cybersecurity would be of lower priority to these countries. By the same token, we would expect a large number of countries to fall into the top right quadrant of the chart, i.e. countries with higher internet penetration rates score higher on the cybersecurity index.</p></div>
 
-			<p>What is more surprising is that a significant number of countries fall into the bottom right corner of the chart. This is of great concern as these countries have high internet penetration rates but have not done enough to safeguard their cyberspace. From the chart, it is clear that many of these countries come from Europe and Central Asia. Let's take a closer look at this region.</p></div>
+			<h3>Europe and Central Asia</h3>
 
-				<div><p>Europe and Central Asia</p>
-				<script src="charts/cyberindex2.js"></script></div>	
+				<div><p>What is more surprising is that a significant number of countries fall into the bottom right quadrant of the chart. This is of great concern as these countries have high internet penetration rates but have not done enough in terms of cyberspace security. From the chart, it is clear that many of these countries come from Europe and Central Asia. Let's take a closer look at this region.</p>
 
-				<div><p>Worryingly, 8 countries in Europe and Central Asia have an internet penetration rate of more than 70% but score lower than 0.3 in the Cybersecurity Index. These countries are Andorra, Cyprus, Iceland, Ireland, Kazahkstan, Liechtenstein, Macedonia and Slovenia.</p></div>
+				<div id="europe"></div>	
+
+				<p>8 countries in Europe and Central Asia have an internet penetration rate of more than 70% but score lower than 0.3 in the Cybersecurity Index. These countries are Andorra, Cyprus, Iceland, Ireland, Kazahkstan, Liechtenstein, Macedonia and Slovenia.</p></div>
+
+				<h3>Sub-Saharan Africa</h3>
+
+				<div><p>Another interesting quadrant that we should look into is the top left quadrant of the chart. These are countries that have healthy cybersecurity indices even though they have a generally low internet penetration rate. Hearteningly, although most countries in Sub-Saharan Africa end up in the top left quadrant, there are are a few countries from the region that are in the top left quadrant with healthy cybersecurity indices.</p></div>
+
+				<div id="africa"></div>
+
+				<div><p>From the chart, we can see that there are two countries in Sub-Saharan Africa with less than 50% internet penetration rates, but score more than 0.5 on the Cybersecurity Index. These two countries are Rwanda and Uganda.</p></div>
+
+
 
 
 <p>Data sourced from <a href="https://knoema.com/GCSI2015/global-cybersecurity-index">here</a> and <a href="https://data.worldbank.org/indicator/IT.NET.USER.ZS">here</a>. Visualization sourced from <a href="https://bl.ocks.org/mbostock/3887118">here</a>.</p>
+
+
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="charts/cyberindex.js"></script>
+
+</div>	
 
 </body>
 </html>
