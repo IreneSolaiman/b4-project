@@ -1,15 +1,47 @@
-#chart body {
+#world body {
     font-family: 'Roboto', sans-serif;
     color: #333333;
 }
 
-#chart .axis path,
-#chart .axis line {
+#world .axis path,
+#world .axis line {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
 
-#chart .dot {
+#world .dot {
+  stroke: #000;
+}
+
+#europe body {
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+}
+
+#europe .axis path,
+#europe .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#europe .dot {
+  stroke: #000;
+}
+
+#africa body {
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+}
+
+#africa .axis path,
+#africa .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#africa .dot {
   stroke: #000;
 }
