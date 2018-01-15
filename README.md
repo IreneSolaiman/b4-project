@@ -3,7 +3,7 @@ Here is a summary of how we worked on our project.
 
 **WRITE-UP ON PRODUCT**
 
-#Types of Cyber Attacks : Irene
+# Types of Cyber Attacks : Irene
 file | description
 -----|------------
 [Data Source](http://www.verizonenterprise.com/verizon-insights-lab/dbir/2017/) | Visualization data from Verizon's 2017 Data Breach Investigations Report, a downloadable PDF
@@ -11,19 +11,19 @@ file | description
 [Data in JSON](charts/sunburst.json) | Reformatted for use in D3
 [Types of Attacks](https://irenesolaiman.github.io/b4-project/types.html) | Project webpage
 
-* This is terrible hygiene, but I created a folder called "chart-practice" with the visualization's original data, and first made sure it would run on my local server. I then manually inserted the data from the PDF one by one (I could not figure out how to extract data from a PDF, especially when the data is provided in different formats, like bar graphs and tables). I kept running by trial and error until I had a sunburst I wanted working on my local server, then transported it to my b4-project folder and pushed it to GitHub.
+This is terrible hygiene, but I created a folder called "chart-practice" with the visualization's original data, and first made sure it would run on my local server. I then manually inserted the data from the PDF one by one (I could not figure out how to extract data from a PDF, especially when the data is provided in different formats, like bar graphs and tables). I kept running by trial and error until I had a sunburst I wanted working on my local server, then transported it to my b4-project folder and pushed it to GitHub.
 
-#Breaches : Irene
+# Breaches : Irene
 file | description
 -----|------------
 [Data Source](http://breachlevelindex.com/) | Visualization data from breachlevelindex
-[Donut](hhttps://bl.ocks.org/mbhall88/b2504f8f3e384de4ff2b9dfa60f325e2) | Visualization
+[Donut](https://bl.ocks.org/mbhall88/b2504f8f3e384de4ff2b9dfa60f325e2) | Visualization
 [Data in CSV](charts/donut.csv) | Reformatted for use in D3
 [Breaches](https://irenesolaiman.github.io/b4-project/breaches.html) | Project webpage
 
-* I managed to somehow 'scrape' the website using Inspect Element and pull the data for breaches by sector from 2013 to 2017. I put this in an Excel document and converted it to CSV. This is also terrible hygiene, but I used the folder called "chart-practice" with the donut visualization's original data, and first made sure it would run on my local server. I then manually inserted the data from my created CSV into the visualization's CSV one by one (I was afraid because it kept breaking when I used my own CSV). I kept running by trial and error until I had a donut I wanted working on my local server, then transported it to my b4-project folder and pushed it to GitHub.
+I managed to somehow 'scrape' the website using Inspect Element and pull the data for breaches by sector from 2013 to 2017. I put this in an Excel document and converted it to CSV. This is also terrible hygiene, but I used the folder called "chart-practice" with the donut visualization's original data, and first made sure it would run on my local server. I then manually inserted the data from my created CSV into the visualization's CSV one by one (I was afraid because it kept breaking when I used my own CSV). I kept running by trial and error until I had a donut I wanted working on my local server, then transported it to my b4-project folder and pushed it to GitHub.
 
-#Cybersecurity Index: Wee Keong
+# Cybersecurity Index: Wee Keong
 file | description
 -----|------------
 [Data Source 1](https://knoema.com/GCSI2015/global-cybersecurity-index) and [Data Source 2](https://data.worldbank.org/indicator/IT.NET.USER.ZS) | [Visualization from Mike Bostock’s Block 3887118 Scatterplot](https://bl.ocks.org/mbostock/3887118) | Visualization
@@ -34,27 +34,27 @@ My data came from two sources: World Bank (Cybersecurity Index) and the Internat
 
 I made several changes to the default code for my visualisation, namely: (1) I shifted the legend from the top right quadrant of my first chart to the top left quadrant, as the former was too crowded with data points; (2) I changed both x and y axes to start from 0 for consistency across all 3 charts; (3) I changed the x and y axes to end at 100 and 1.0 respectively, instead of the maximum value of my datapoints for consistency across all 3 charts; and (4) I removed the black border around the dots in my charts. For my second and third charts, which only shows data from "Europe and Central Asia" and "Sub-Saharan Africa" respectively, I removed the legend and changed the default color of the dots to match the legend in the first chart. I worked on these changes on a branch and pushed it to GitHub master after I was satisfied with the final charts. 
 
-#Stephane
+# Stephane
 
 
 **RETROSPECTIVE**
 
-#Irene
+# Irene
 * Start: Looking at the visualizations at the same time as the datasets. I ended up using the dataset that fit best with a visualization that I wanted to create. It would've been more efficient to map the website with both the data and existing visualization code. 
 * Stop: Getting bogged down in the minute aspects of the project. I spent a good few hours on making a responsive webpage menu just for funsies when I should have been doing this write up.
 * Continue: Excellent group communication and morale. I was getting quite worried towards the last Saturday, but our team kept confident and supportive. We had good structure and a common vision that kept us moving.
 
-#Wee Keong
+# Wee Keong
 Start: We were too focused on getting the best datasets which we could analyse, and started on our visualisations relatively late. On retrospect, we could have started on our visualisations earlier, to give ourselves more time to improve on them.
 Stop: Being too easily distracted by peripheral issues during our scrum meetings, which causes our meetings to overrun beyond the ideal 15 minuts on a few occasions.
 Continue: Having open channels of communication and having scrum meetings every day, which provided me with a good overview of our progress and where the key blockers are.
 
-#Stephane
+# Stephane
 
 
 **TEAM PROCESSES**
 
-#Scrum Meetings:
+# Scrum Meetings:
 5 Jan (Fri): In class
 6 Jan (Sat): In person
 7 Jan (Sun): On Slack
@@ -66,7 +66,7 @@ Continue: Having open channels of communication and having scrum meetings every 
 13 Jan (Sat): In Person
 14 Jan (Sun): In Person
 
-#Burn-down/Burn-up:
+# Burn-down/Burn-up:
 
 Day 1:
 Burn-down: -0
