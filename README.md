@@ -35,6 +35,27 @@ My data came from two sources: World Bank (Cybersecurity Index) and the Internat
 I made several changes to the default code for my visualisation, namely: (1) I shifted the legend from the top right quadrant of my first chart to the top left quadrant, as the former was too crowded with data points; (2) I changed both x and y axes to start from 0 for consistency across all 3 charts; (3) I changed the x and y axes to end at 100 and 1.0 respectively, instead of the maximum value of my datapoints for consistency across all 3 charts; and (4) I removed the black border around the dots in my charts. For my second and third charts, which only shows data from "Europe and Central Asia" and "Sub-Saharan Africa" respectively, I removed the legend and changed the default color of the dots to match the legend in the first chart. I worked on these changes on a branch and pushed it to GitHub master after I was satisfied with the final charts. 
 
 # Stephane
+file | description
+-----|------------
+[Data Source](https://data.worldbank.org/indicator/IT.NET.USER.ZS)| Visualization data from the World Bank 
+[Heatmap](http://bl.ocks.org/PBrockmann/635179ff33f17d2d75c2) | Visualization
+[Data for Heatmap](raw_data/metrics_ocmip5_2.json) | Reformatted for use in D3
+[Internet Penetration Heatmap](https://irenesolaiman.github.io/b4-project/internetpenetration.html) | Project webpage
+
+My data came from the World Bank (Internet Penetration). It was originally in csv format. 
+(1) I edited it using Excel: 
+(a) I added a variable: the region for each country. I pulled from the World Bank's MECE categorization of countries in regions (a simple index match on the data from: data.worldbank.org/data/downloads/site-content/Trac.xls) and performed a simple index-match function. 
+(b) I transformed the data into strings adapted to a json format. Referring to cell X listing "United States of America", I queried for ="["&char(34)&X&char(34(&"];" which gave me ["United States of America"];   I did this on the country names, the region names, and the internet penetration data.
+(2) I then copy pasted it into a json. 
+(a) In the process, I create from scratch the variable "region". The original json file downloaded from bl.ocks only had the one variable and its corresponding numerical data. 
+(b) The new json file contains >200 rows, versus the original 6 rows of data. 
+
+I made several changes to the default code for my visualisation, namely: 
+(1) I shifted the legend to the right hand side of the graphic, and change the spacing between the legend and the graph. 
+(2) I placed the default legend on the "PuOr" palette: it is what shows by default in the selector and also what displays by default when you load the page.
+(3) I changed the legend/palette scale to reflect a domain from 0 to 100, and not from 0 to 1. 
+(4) I took out the zoom function
+(5) I took out the function that enables the viewer to drag the heatmap across the screen 
 
 
 **RETROSPECTIVE**
@@ -50,7 +71,9 @@ Stop: Being too easily distracted by peripheral issues during our scrum meetings
 Continue: Having open channels of communication and having scrum meetings every day, which provided me with a good overview of our progress and where the key blockers are.
 
 # Stephane
-
+* Start: reviewing the architecture of the site together regularly. Following the previous retrospective, we had been careful to communicate the changes in styles and formatting made (and it was a morale booster too: it's visible change). It may be beneficial for the future to also discuss the changes made to the back-end e.g. should we delete the "our-team" folder now that the information is in the homepage accordion?
+* Stop: Thinking in terms of ouput. Giving the time allocated to the project, best to start with the dataset and start thinking of an output graph from there. Ideally my heatmap would have compared penetration to the cybersecurity index but the latter was only available for 3 years. In addition, stop relying on Wee for wonderful snacks as we spent our days coding... 
+* Continue: Scrum meetings every day standing up; sharing the "learnt lessons" from us individually overcoming blockers ("so I did this and that's how I got it to work"); supporting each other's progress and morale. 
 
 **TEAM PROCESSES**
 

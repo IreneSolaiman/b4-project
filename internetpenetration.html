@@ -9,6 +9,31 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="styles/cyberindex.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+	table {
+		border-collapse: collapse;
+		width: 100%;
+		border-style: none;
+	}
+
+	th, td {
+		padding: 0.25rem;
+		text-align: left;
+		border: 0px solid #ccc;
+		text-align: left;
+		vertical-align: top;
+		padding: 30px;
+		border-bottom: 1px solid #ddd;
+		border-left: 1px solid #ddd;
+	}
+
+	.no-border {
+		border-left: none;
+	}
+
+</style>
 </head>
 
 
@@ -39,18 +64,16 @@ Order:
 </select>
 -->
 <br>
-<br>
-<br>
-<br>
-<br>
-
-<table class="w3-table">
+<table>
 	<tr>
-		<th>Graph</th>
-		<th>Take-aways</th>
+		<th class="no-border">
+			<h2>Internet penetration </h2>
+			<p><I><font color="grey">Households equiped with access to the Internet, % </I></font></p>
+		</th>
+		<th><h2>Take-aways</h2></th>
 	</tr>
 	<tr>
-		<td>
+		<td class="no-border">
 			<i>Palette</i><br>
 				<select id="Palette">
 				  <option value="RdYlGn">RdYlGn</option>
@@ -63,22 +86,28 @@ Order:
 				  <option value="BrBG">BrBG</option>
 				  <option value="PuOr" selected>PuOr</option>
 				</select>
-			<div id="heatmap"></div>
+			<div style="overflow-y:auto;">
+				<div id="heatmap"></div>
 
-			<script src="https://d3js.org/d3.v3.js"></script>
-			<script src="https://d3js.org/colorbrewer.v1.min.js"></script>
-			<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+				<script src="https://d3js.org/d3.v3.js"></script>
+				<script src="https://d3js.org/colorbrewer.v1.min.js"></script>
+				<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 
-			<script src="scripts/heatmap.js"></script>
-			<link rel="stylesheet" href="styles/heatmap.css" />
+				<script src="scripts/heatmap.js"></script>
+				<link rel="stylesheet" href="styles/heatmap.css" />
 
-			<script>
-			$(document).ready(function() {
-				heatmap_display("raw_data/metrics_ocmip5_2.json", "#heatmap", "PuOr");
-			});
-			</script>
+				<script>
+				$(document).ready(function() {
+					heatmap_display("raw_data/metrics_ocmip5_2.json", "#heatmap", "PuOr");
+				});
+				</script>
+			</div>
 		</td>
-		<td>The evolution of internet penetration from 1990 to today helps to visualize the growing opportunities and risks of the Internet and the many nuances across the globe. If the Internet serves as a support for individual, business or public-sector communications and transactions, it also presents a new vector for attacks: cyberattacks.<br><br>The visualization we created forces to see cybersecurity not only as the preoccupation of developed countries but rather as a global concern. It is noteworthy that countries from Aruba to Pakistan, and the circonvoluted paths the latest ransomware took across the globe is a clear reminder of that.<br><br>This reminds us of the much-needed international cooperation on the issue. The weaknesses of Aruba's cybersecurite are an immediate threat to any other country in the world. The 56 signatories of the Budapest Convention sent a strong signal in 2001. Perhaps it is time to rething the convention, in its implementation, scope, and breadth of parties?</td>
+		<div>
+			<div>
+				<td>The evolution of internet penetration from 1990 to today helps to visualize the growing opportunities and risks of the Internet and the many nuances across the globe. If the Internet serves as a support for individual, business or public-sector communications and transactions, it also presents a new vector for attacks: cyberattacks.<br><br>The visualization we created forces to see cybersecurity not only as the preoccupation of developed countries but rather as a global concern. It is noteworthy that countries from Aruba to Pakistan, and the circonvoluted paths the latest ransomware took across the globe is a clear reminder of that.<br><br>This reminds us of the much-needed international cooperation on the issue. The weaknesses of Aruba's cybersecurite are an immediate threat to any other country in the world. The 56 signatories of the Budapest Convention sent a strong signal in 2001. Perhaps it is time to rething the convention, in its implementation, scope, and breadth of parties?</td>
+			</div>
+		</div>	
 	</tr>
 </table>
 <script src="topnav.js"></script>
