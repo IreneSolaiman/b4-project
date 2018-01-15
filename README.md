@@ -24,8 +24,8 @@ I managed to somehow 'scrape' the website using Inspect Element and pull the dat
 #Cybersecurity Index: Wee Keong
 file | description
 -----|------------
-[Data Source](https://knoema.com/GCSI2015/global-cybersecurity-index and https://data.worldbank.org/indicator/IT.NET.USER.ZS) | Visualization from Mike Bostock’s Block 3887118 Scatterplot (https://bl.ocks.org/mbostock/3887118) | Visualization
-[Data in CSV](charts/cyberindex.csv), (charts/cyberindex-europe.csv) and (charts/cyberindex-africa.csv)) | Reformatted for use in D3
+[Data Source 1](https://knoema.com/GCSI2015/global-cybersecurity-index) and [Data Source 2](https://data.worldbank.org/indicator/IT.NET.USER.ZS) | [Visualization from Mike Bostock’s Block 3887118 Scatterplot](https://bl.ocks.org/mbostock/3887118) | Visualization
+[Data for Chart 1](charts/cyberindex.csv), [Data for Chart 2](charts/cyberindex-europe.csv) and [Data for Chart 3](charts/cyberindex-africa.csv)) | Reformatted for use in D3
 [Cybersecurity Index](https://irenesolaiman.github.io/b4-project/cyberindex.html) | Project webpage
 
 My data came from two sources: World Bank (Cybersecurity Index) and the International Telecommunication Union (uoloaded onto Knoema.com). Both sets of data were in CSV format. I merged the two datasets together, matching them using the VLOOKUP function in Microsoft Excel. There were a few countries whose names were listed differently in the two documents, e.g. "Korea, Rep" vs "Republic of Korea". For these countries, I had to match the data together manually. 
