@@ -1,6 +1,8 @@
 # b4-project
 Here is a summary of how we worked on our project.
 
+**WRITE-UP ON PRODUCT**
+
 #Types of Cyber Attacks : Irene
 file | description
 -----|------------
@@ -33,3 +35,87 @@ My data came from two sources: World Bank (Cybersecurity Index) and the Internat
 I made several changes to the default code for my visualisation, namely: (1) I shifted the legend from the top right quadrant of my first chart to the top left quadrant, as the former was too crowded with data points; (2) I changed both x and y axes to start from 0 for consistency across all 3 charts; (3) I changed the x and y axes to end at 100 and 1.0 respectively, instead of the maximum value of my datapoints for consistency across all 3 charts; and (4) I removed the black border around the dots in my charts. For my second and third charts, which only shows data from "Europe and Central Asia" and "Sub-Saharan Africa" respectively, I removed the legend and changed the default color of the dots to match the legend in the first chart. I worked on these changes on a branch and pushed it to GitHub master after I was satisfied with the final charts. 
 
 #Stephane
+
+
+**RETROSPECTIVE**
+
+#Irene
+
+#Wee Keong
+Start: We were too focused on getting the best datasets which we could analyse, and started on our visualisations relatively late. On retrospect, we could have started on our visualisations earlier, to give ourselves more time to improve on them.
+Stop: Being too easily distracted by peripheral issues during our scrum meetings, which causes our meetings to overrun beyond the ideal 15 minuts on a few occasions.
+Continue: Having open channels of communication and having scrum meetings every day, which provided me with a good overview of our progress and where the key blockers are.
+
+#Stephane
+
+
+**TEAM PROCESSES**
+
+#Scrum Meetings:
+5 Jan (Fri): In class
+6 Jan (Sat): In person
+7 Jan (Sun): On Slack
+8 Jan (Mon): On Slack
+9 Jan (Tue): Before class
+10 Jan (Wed): In Class
+11 Jan (Thu): On Slack
+12 Jan (Fri): Before Class
+13 Jan (Sat): In Person
+14 Jan (Sun): In Person
+
+#Burn-down/Burn-up:
+
+Day 1:
+Burn-down: -0
+Burn-up: +24
+Balance: 24
+
+Day 2:
+Burn-down: -15
+Burn-up: +16
+Balance: 35
+
+Day 3:
+Burn-down: -9
+Burn-up: +13
+Balance: 39
+
+Day 4:
+Burn-down: -20
+Burn-up: +21
+Balance: 40
+
+Day 5:
+Burn-down: -8
+Burn-up: +42
+Balance: 74
+
+Day 6:
+Burn-down: -21
+Burn-up: +8
+Balance: 61
+
+Day 7: 
+Burn-down: -13
+Burn-up:+34
+Balance: 82
+
+Day 8:
+Burn-down: -11
+Burn-up: +21
+Balance: 91
+
+Day 9:
+Burn-down: -45
+Burn-up: 0
+Balance: 46
+
+Day 10: 
+Burn-down: -46
+Burn-up: +0
+Balance: 0
+
+
+
+
+
