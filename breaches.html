@@ -12,25 +12,25 @@
 <h1>Data Breaches</h1>
 <!--this section creates the html for the top horizontal navigation bar-->
 
-	<div class="topnav">
+	<div class="topnav" id="myTopnav">
 	 <a href="index.html">Home</a>
-	 <a href="breaches.html" class="active">Data breaches</a>
-	 <a href="internet.html">Internet penetration</a>
-	 <a href="servers.html">Secure servers</a>
 	 <a href="types.html">Types of Cyber Attacks</a>
-	 <a href="bitcoin.html">Bitcoin</a>
+	 <a href="breaches.html" class="on">Data breaches</a>
+	 <a href="internetpenetration.html">Internet penetration</a>
+	 <a href="cyberindex.html">Cybersecurity Index</a>
+	 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
 
 <h2>Breaches by Sector</h2>	
 <h2>Data shown from 2013 to 2017</h2>	
 <div id="chart"></div>
-<p>Hover over each section to see number of records affected.</p>
+<p>Hover over each section to see number of records affected. On mobile, tap on each section.</p>
 
 <p>Data sourced from <a href="http://breachlevelindex.com/">here</a>. Visualization sourced from <a href="https://bl.ocks.org/mbhall88/b2504f8f3e384de4ff2b9dfa60f325e2">here</a></p>
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="charts/donut.js"></script>
 <script src="charts/sectordonut.js"></script>
-
+<script src="topnav.js"></script>
 </body>
 </html>

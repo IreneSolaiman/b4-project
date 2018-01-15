@@ -3,30 +3,75 @@
 <head>
 	<link href="styles/styles.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="Eyecon.png">
-	<title>Military</title>
+	<title>Types of Cyber Attacks</title>
+	<link rel="stylesheet" href="styles/sunburst.css">
 </head>
 
 
 <body>
 
-<h1>Military</h1>
+<h1>Types of Cyber Attacks</h1>
 <!--this section creates the html for the top horizontal navigation bar-->
 
-	<div class="topnav">
+	<div class="topnav" id="myTopnav">
 	 <a href="index.html">Home</a>
+	 <a href="types.html" class="on">Types of Cyber Attacks</a>
 	 <a href="breaches.html">Data breaches</a>
-	 <a href="internet.html">Internet penetration</a>
-	 <a href="servers.html">Secure servers</a>
-	 <a href="types.html" class="active">Types of Cyber Attacks</a>
-	 <a href="bitcoin.html">Bitcoin</a>
+	 <a href="internetpenetration.html">Internet penetration</a>
+	 <a href="cyberindex.html">Cybersecurity Index</a>
+	 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
 	
+<h2>Cyber Attacks Breakdown</h2>
+<h3>Breaches and Incidents in 2017</h3>
+<div id="sunburst"></div>
+
+<p>Click on each section to zoom in. Click on center to zoom out. Hover over each section to view title and count. </p>
+
+<p class="solid">
+	<i><b>Definitions</i></b>: (from Verizon's 2017 Data Breach Investifations Report)
+	<br>
+	<br>
+<i>Incident</i>: A security event that compromises the integrity, confidentiality or availability of an information asset. 
+<br>
+<br>
+<i>Breach</i>: An incident that results in the confirmed disclosure, not just potential exposure, of data to an unauthorized party. 
+<br>
+<br>
+<i>Crimeware</i>: All instances involving malware that did not fit into a more specific pattern. The majority of incidents that comprise this pattern are opportunistic in nature and are financially motivated. This pattern will often affect customers and is where 'typical' malware infections are placed.
+<br>
+<br>
+<i>Cyber-Espionage</i>: Incidents in this pattern include unauthorized network or system access linked to state-affiliated actors and/or exhibiting the motive of espionage.
+<br>
+<br>
+<i>Denial of Service</i>: Any attack intended to compromise the availability of networks and systems. Includes both network and application attacks designed to overwhelm systems, resulting in performance degradation or interruption of service.
+<br>
+<br>
+<i>Privilege Misuse</i>: Any attack intended to compromise the availability of networks and systems. Includes both network and application attacks designed to overwhelm systems, resulting in performance degradation or interruption of service.
+<br>
+<br>
+<i>Miscellaneous Errors</i>: Incidents in which unintentional actions directly compromised an attribute of a security asset. This does not include lost devices, which are grouped with theft.
+<br>
+<br>
+<i>Payment Card Skimmers</i>: All incidents in which a skimming device was physically implanted (tampering) on an asset that reads magnetic stripe data from a payment card (e.g. ATMs, gas pumps, POS terminals, etc.).
+<br>
+<br>
+<i>Point of Sale Intrustions</i>: Remote attacks against the environments where card-present retail transactions are conducted. POS terminals and POS controllers are the targeted assets. Physical tampering of PIN entry device (PED) pads or swapping out devices is covered in the Payment Card Skimmers section.
+<br>
+<br>
+<i>Physical Theft and Loss</i>: Any incident where an information asset went missing, whether through misplacement or malice.
+<br>
+<br>
+<i>Web Application Attacks</i>: Any incident in which a web application was the vector of attack. This includes exploits of code-level vulnerabilities in the application as well as thwarting authentication mechanisms.
+<br>
+<br>
+<i>Everything Else</i>: Any incident that did not classify as one of the nine patterns.</p>
 
 
-<script src="//d3js.org/d3.v3.min.js"></script>
+<p>Data sourced from <a href="http://www.verizonenterprise.com/verizon-insights-lab/dbir/2017/">Verizon Enterprise's 2017 Data Breach Investigations Report</a>. Visualization sourced from <a href="https://bl.ocks.org/vasturiano/12da9071095fbd4df434e60d52d2d58d">here.</a></p>
+<script src='https://d3js.org/d3.v4.min.js'></script>
 <script type='text/javascript' src='charts/sunburst.js'></script>
-
 	
-
+<script src="topnav.js"></script>
 </body>
 </html>
