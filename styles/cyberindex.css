@@ -10,9 +10,6 @@
   shape-rendering: crispEdges;
 }
 
-#world .dot {
-  stroke: #000;
-}
 
 #europe body {
     font-family: 'Roboto', sans-serif;
@@ -26,9 +23,6 @@
   shape-rendering: crispEdges;
 }
 
-#europe .dot {
-  stroke: #000;
-}
 
 #africa body {
     font-family: 'Roboto', sans-serif;
@@ -42,6 +36,3 @@
   shape-rendering: crispEdges;
 }
 
-#africa .dot {
-  stroke: #000;
-}
