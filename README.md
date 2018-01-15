@@ -11,7 +11,7 @@ file | description
 [Data in JSON](charts/sunburst.json) | Reformatted for use in D3
 [Types of Attacks](https://irenesolaiman.github.io/b4-project/types.html) | Project webpage
 
-This is terrible hygiene, but I created a folder called "chart-practice" with the visualization's original data, and first made sure it would run on my local server. I then manually inserted the data from the PDF one by one (I could not figure out how to extract data from a PDF, especially when the data is provided in different formats, like bar graphs and tables). I kept running by trial and error until I had a sunburst I wanted working on my local server, then transported it to my b4-project folder and pushed it to GitHub.
+* This is terrible hygiene, but I created a folder called "chart-practice" with the visualization's original data, and first made sure it would run on my local server. I then manually inserted the data from the PDF one by one (I could not figure out how to extract data from a PDF, especially when the data is provided in different formats, like bar graphs and tables). I kept running by trial and error until I had a sunburst I wanted working on my local server, then transported it to my b4-project folder and pushed it to GitHub.
 
 #Breaches : Irene
 file | description
@@ -21,7 +21,7 @@ file | description
 [Data in CSV](charts/donut.csv) | Reformatted for use in D3
 [Breaches](https://irenesolaiman.github.io/b4-project/breaches.html) | Project webpage
 
-I managed to somehow 'scrape' the website using Inspect Element and pull the data for breaches by sector from 2013 to 2017. I put this in an Excel document and converted it to CSV. This is also terrible hygiene, but I used the folder called "chart-practice" with the donut visualization's original data, and first made sure it would run on my local server. I then manually inserted the data from my created CSV into the visualization's CSV one by one (I was afraid because it kept breaking when I used my own CSV). I kept running by trial and error until I had a donut I wanted working on my local server, then transported it to my b4-project folder and pushed it to GitHub.
+* I managed to somehow 'scrape' the website using Inspect Element and pull the data for breaches by sector from 2013 to 2017. I put this in an Excel document and converted it to CSV. This is also terrible hygiene, but I used the folder called "chart-practice" with the donut visualization's original data, and first made sure it would run on my local server. I then manually inserted the data from my created CSV into the visualization's CSV one by one (I was afraid because it kept breaking when I used my own CSV). I kept running by trial and error until I had a donut I wanted working on my local server, then transported it to my b4-project folder and pushed it to GitHub.
 
 #Cybersecurity Index: Wee Keong
 file | description
@@ -40,6 +40,9 @@ I made several changes to the default code for my visualisation, namely: (1) I s
 **RETROSPECTIVE**
 
 #Irene
+* Start: Looking at the visualizations at the same time as the datasets. I ended up using the dataset that fit best with a visualization that I wanted to create. It would've been more efficient to map the website with both the data and existing visualization code. 
+* Stop: Getting bogged down in the minute aspects of the project. I spent a good few hours on making a responsive webpage menu just for funsies when I should have been doing this write up.
+* Continue: Excellent group communication and morale. I was getting quite worried towards the last Saturday, but our team kept confident and supportive. We had good structure and a common vision that kept us moving.
 
 #Wee Keong
 Start: We were too focused on getting the best datasets which we could analyse, and started on our visualisations relatively late. On retrospect, we could have started on our visualisations earlier, to give ourselves more time to improve on them.
