@@ -69,7 +69,7 @@ Order:
 		<th class="no-border">
 			<h3>Internet penetration </h3> <p><I><font color="grey">Individuals equiped with access to the Internet, % </I></font></p>
 		</th>
-		<th><h3>>>> What does this have to do with Aruba, Budapest, 2001?</h3></th>
+		<th><h3>>>> What does this have to do with Aruba, Budapest, or 2001?</h3></th>
 	</tr>
 	<tr>
 		<td class="no-border">
@@ -89,18 +89,6 @@ Order:
 				</select>
 				<div id="heatmap"></div>
 
-				<script src="https://d3js.org/d3.v3.js"></script>
-				<script src="https://d3js.org/colorbrewer.v1.min.js"></script>
-				<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-
-				<script src="scripts/heatmap.js"></script>
-				<link rel="stylesheet" href="styles/heatmap.css" />
-
-				<script>
-				$(document).ready(function() {
-					heatmap_display("raw_data/metrics_ocmip5_2.json", "#heatmap", "PuOr");
-				});
-				</script>
 		</td>
 		<div>
 			<div>
@@ -109,6 +97,20 @@ Order:
 		</div>	
 	</tr>
 </table>
+<p>Data sourced from <a href="https://data.worldbank.org/indicator/IT.NET.USER.ZS">the World Bank</a>. Visualization sourced from <a href="http://bl.ocks.org/PBrockmann/635179ff33f17d2d75c2">here</a>.</p>
+
 <script src="topnav.js"></script>
+	<script src="https://d3js.org/d3.v3.js"></script>
+	<script src="https://d3js.org/colorbrewer.v1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script src="scripts/heatmap.js"></script>
+	<link rel="stylesheet" href="styles/heatmap.css" />
+
+	<script>
+			$(document).ready(function() {
+				heatmap_display("raw_data/metrics_ocmip5_2.json", "#heatmap", "PuOr");
+				});
+	</script>
 </body>
 </html>
